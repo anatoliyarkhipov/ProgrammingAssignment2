@@ -75,7 +75,7 @@ cacheSolve <- function(x, ...) {
 
     if (is.null(s)) {
     	message('Calculate inversion of the matrix')
-        s <- solve( x$get() )
+        s <- solve( x$get(), ... )
     	x$setSolve(s)
     }
 
